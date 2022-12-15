@@ -1,0 +1,12 @@
+html{
+    box-sizing: border-box;
+}
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+.sobre-nosotros{
+    background-color: #037bc0;
+    width: 200px;
+    padding: 25px;
+    box-sizing: border-box;
+}
