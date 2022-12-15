@@ -1,12 +1,58 @@
+/* Globales */
 html{
     box-sizing: border-box;
 }
 *,*:before, *:after{
     box-sizing: inherit;
 }
-.sobre-nosotros{
-    background-color: #037bc0;
-    width: 200px;
-    padding: 25px;
-    box-sizing: border-box;
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.contenedor{
+    max-width: 1200px;
+    margin-inline: auto;
+}
+/* Header */
+
+.nombre-sitio{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.nombre-sitio span {
+    color: #037bc0;
+}
+
+/* Nav */
+.contenedor-navegacion{
+    border-top: 1px solid #e1e1e1;
+}
+.nav-principal{
+
+    padding: 20px 0px; 
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* Hero */
+
+.hero{
+    height:550px;
+    background-image: url(../img/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Categorias*/
+.listado-categorias{
+    background-color: red;
+    display: grid;
+    grid-template-columns: 100px 200px 200px;
+    grid-template-rows: 100px;
 }
