@@ -33,10 +33,26 @@ img{
     display: block;
     max-width: 100%; /*Para que todas las imagenes ocupen el 100% de su contenedor, asi se evita desbordamiento*/
 }
+.btn{
+    background-color: #8cbc00;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    transition: background-color .3s ease-out;
+}
+.btn:hover{
+    background-color: #769c02;
+}
 
 .contenedor{
     max-width: 120rem;
     margin-inline: auto;
+}
+/*Utilidades*/
+.text-center{
+    text-align: center;
 }
 /* Header */
 
@@ -99,4 +115,54 @@ img{
     gap: 2rem; /*Agregaa espacio entre columnas y filas*/
 }
 
+
+/*Sobre nosotros**/
+.sobre-nosotros{
+    background-image: linear-gradient( to right, transparent 50%, #037bc0 50%, #037bc0 100%), url(../img/nosotros.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 100%, 120rem ;
+    padding: 10rem 0;
+}
+
+.sobre-nosotros-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10rem;
+
+}
+
+.texto-nosotros{
+    grid-column: 2 / 3; /*Posiciona el contendido entre la linea 2 y la linea 3*/
+    color: #fff;
+    text-align: justify;
+}
+
+/*Listado de productos*/
+.contenido-principal{
+    padding-top: 5rem;
+}
+.listado-productos{
+
+}
+
+.producto{
+    background-color: #037bc0;
+}
+.texto-producto{
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+}
+.texto-producto h3{
+    margin: 0;
+}
+.texto-producto p{
+    margin: 0 0 .5rem 0;
+}
+
+.texto-producto .precio-producto{
+    font-size: 2.8rem;
+    font-weight: 900;
+}
 
