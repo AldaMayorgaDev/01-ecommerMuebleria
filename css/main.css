@@ -1,26 +1,48 @@
 /* Globales */
 html{
     box-sizing: border-box;
+    font-size: 62.5%; /*Sale de (10px/16px)*100 para que 1rem sea igual a 10px*/
 }
 *,*:before, *:after{
     box-sizing: inherit;
 }
-
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+h1,h2,h3{
+    font-family: 'Playfair Display', serif;
+    margin: 0 0 5rem 0;
+}
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3rem;
+}
 a{
     text-decoration: none;
     color: #000000;
 }
 
+img{
+    display: block;
+    max-width: 100%; /*Para que todas las imagenes ocupen el 100% de su contenedor, asi se evita desbordamiento*/
+}
+
 .contenedor{
-    max-width: 1200px;
+    max-width: 120rem;
     margin-inline: auto;
 }
 /* Header */
 
 .nombre-sitio{
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 5rem;
 }
 
 .nombre-sitio span {
@@ -33,7 +55,7 @@ a{
 }
 .nav-principal{
 
-    padding: 20px 0px; 
+    padding: 2rem 0rem; 
     display: flex;
     justify-content: space-between;
 }
@@ -43,16 +65,38 @@ a{
 /* Hero */
 
 .hero{
-    height:550px;
+    height:55rem;
     background-image: url(../img/principal.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
 }
 
 /*Categorias*/
-.listado-categorias{
-    background-color: red;
-    display: grid;
-    grid-template-columns: 100px 200px 200px;
-    grid-template-rows: 100px;
+.categorias{
+    padding-top: 5rem;
 }
+.categorias h2{
+    text-align: center;
+}
+.categoria a{
+    display: block;
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.categoria a:hover{
+    background-color: #037bc0;
+    color: #fff;
+    border-radius: 0 0 2rem 2rem;
+    /* border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px; */
+}
+.listado-categorias{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem; /*Agregaa espacio entre columnas y filas*/
+}
+
+
