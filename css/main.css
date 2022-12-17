@@ -295,3 +295,8 @@ img{
 .entrada-blog{
     text-align: justify;
 }
+
+.contenido-entrada-blog{
+    width: 60rem;
+    margin: 0 auto;
+}
