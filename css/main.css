@@ -41,6 +41,7 @@ img{
     font-weight: 900;
     padding: 1rem;
     transition: background-color .3s ease-out;
+    text-align: center;
 }
 .btn:hover{
     background-color: #769c02;
@@ -53,6 +54,10 @@ img{
 /*Utilidades*/
 .text-center{
     text-align: center;
+}
+
+.max-width-30{
+    max-width: 30rem;
 }
 /* Header */
 
@@ -118,6 +123,7 @@ img{
 
 /*Sobre nosotros**/
 .sobre-nosotros{
+    margin-top: 5rem;
     background-image: linear-gradient( to right, transparent 50%, #037bc0 50%, #037bc0 100%), url(../img/nosotros.jpg);
     background-repeat: no-repeat;
     background-position: left center;
@@ -237,4 +243,83 @@ img{
 
 .footer-nav a{
     display: block;
+}
+
+/*Nosotros*/
+.contenido-nosotros{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); /*Si es menos de 250px, se asgina 1fr a cada hijo*/
+    column-gap: 4rem;
+}
+
+.informacion-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    padding: 2rem;
+}
+
+/* Blog */
+
+.contenedor-blog{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 4rem;
+}
+
+.articulo{
+   border-bottom: 2px solid #e1e1e1;
+   padding-bottom: 4rem;
+   margin-bottom: 2rem;
+}
+
+.articulo:last-of-type{
+    border: none;
+}
+
+.entrada-meta{
+    display: flex;
+    justify-content: space-between;
+}
+
+.entrada-meta p{
+    font-weight: 700;
+}
+
+.entrada-meta span{
+    color: #037bc0;
+}
+
+.entrada-blog{
+    text-align: justify;
+}
+
+.contenido-entrada-blog{
+    width: 60rem;
+    margin: 0 auto;
+}
+
+/*Galeria*/
+
+.galeria{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.galeria img{
+    height: 40rem;
+    width: 40rem;
+    object-fit: cover;
+    transition: all .30s ease-out;
+}
+
+.galeria img:hover{
+    transform: scale(1.08);
+    border-radius: 1.5rem;
 }
