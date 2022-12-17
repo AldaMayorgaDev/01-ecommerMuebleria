@@ -118,6 +118,7 @@ img{
 
 /*Sobre nosotros**/
 .sobre-nosotros{
+    margin-top: 5rem;
     background-image: linear-gradient( to right, transparent 50%, #037bc0 50%, #037bc0 100%), url(../img/nosotros.jpg);
     background-repeat: no-repeat;
     background-position: left center;
