@@ -1,0 +1,370 @@
+/* Globales */
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /*Sale de (10px/16px)*100 para que 1rem sea igual a 10px*/
+}
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+h1,h2,h3{
+    font-family: 'Playfair Display', serif;
+    margin: 0 0 5rem 0;
+}
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3rem;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+img{
+    display: block;
+    max-width: 100%; /*Para que todas las imagenes ocupen el 100% de su contenedor, asi se evita desbordamiento*/
+}
+.btn{
+    background-color: #8cbc00;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    transition: background-color .3s ease-out;
+    text-align: center;
+    border: none;
+}
+.btn:hover{
+    background-color: #769c02;
+    cursor: pointer;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin-inline: auto;
+}
+/*Utilidades*/
+.text-center{
+    text-align: center;
+}
+
+.max-width-30{
+    max-width: 30rem;
+}
+/* Header */
+
+.nombre-sitio{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.nombre-sitio span {
+    color: #037bc0;
+}
+
+/* Nav */
+.contenedor-navegacion{
+    border-top: 1px solid #e1e1e1;
+}
+.nav-principal{
+
+    padding: 2rem 0rem; 
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* Hero */
+
+.hero{
+    height:55rem;
+    background-image: url(../img/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/*Categorias*/
+.categorias{
+    padding-top: 5rem;
+}
+.categorias h2{
+    text-align: center;
+}
+.categoria a{
+    display: block;
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.categoria a:hover{
+    background-color: #037bc0;
+    color: #fff;
+    border-radius: 0 0 2rem 2rem;
+    /* border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px; */
+}
+.listado-categorias{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem; /*Agregaa espacio entre columnas y filas*/
+}
+
+
+/*Sobre nosotros**/
+.sobre-nosotros{
+    margin-top: 5rem;
+    background-image: linear-gradient( to right, transparent 50%, #037bc0 50%, #037bc0 100%), url(../img/nosotros.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 100%, 120rem ;
+    padding: 10rem 0;
+}
+
+.sobre-nosotros-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10rem;
+
+}
+
+.texto-nosotros{
+    grid-column: 2 / 3; /*Posiciona el contendido entre la linea 2 y la linea 3*/
+    color: #fff;
+    text-align: justify;
+}
+
+/*Listado de productos*/
+.contenido-principal{
+    padding-top: 5rem;
+}
+.listado-productos{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 2rem; /*Separacion entre columnas*/
+    row-gap: 2rem; /*Separacion entre filas*/
+}
+
+.producto:nth-child(1){
+    grid-column: 1/7;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.producto:nth-child(1) img{
+    height: 43rem;
+    width: 100%;
+    object-fit: cover;
+}
+.producto:nth-child(2){
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.producto:nth-child(2) img{
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+.producto:nth-child(3){
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+.producto:nth-child(3) img{
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+.producto:nth-child(4){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.producto:nth-child(5){
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.producto:nth-child(6){
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+.producto{
+    background-color: #037bc0;
+}
+.texto-producto{
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+}
+
+.descripcion-producto{
+    text-align: justify;
+
+}
+.texto-producto h3{
+    margin: 0;
+}
+.texto-producto p{
+    margin: 1rem 0 .5rem 0;
+}
+
+.texto-producto .precio-producto{
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+
+/*Footer*/
+
+.site-footer{
+    border-top: 1px solid #e1e1e1;
+    margin-top: 5rem;
+    padding-top: 5rem;
+}
+.site-footer h3{
+    margin-bottom: 1rem;
+}
+.copyright{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 1.2rem;
+}
+.grid-footer{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    gap: 2rem;
+}
+
+.footer-nav a{
+    display: block;
+}
+
+/*Nosotros*/
+.contenido-nosotros{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); /*Si es menos de 250px, se asgina 1fr a cada hijo*/
+    column-gap: 4rem;
+}
+
+.informacion-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    padding: 2rem;
+}
+
+/* Blog */
+
+.contenedor-blog{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 4rem;
+}
+
+.articulo{
+   border-bottom: 2px solid #e1e1e1;
+   padding-bottom: 4rem;
+   margin-bottom: 2rem;
+}
+
+.articulo:last-of-type{
+    border: none;
+}
+
+.entrada-meta{
+    display: flex;
+    justify-content: space-between;
+}
+
+.entrada-meta p{
+    font-weight: 700;
+}
+
+.entrada-meta span{
+    color: #037bc0;
+}
+
+.entrada-blog{
+    text-align: justify;
+}
+
+.contenido-entrada-blog{
+    width: 60rem;
+    margin: 0 auto;
+}
+
+/*Galeria*/
+
+.galeria{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.galeria img{
+    height: 40rem;
+    width: 40rem;
+    object-fit: cover;
+    transition: all .30s ease-out;
+}
+
+.galeria img:hover{
+    transform: scale(1.08);
+    border-radius: 1.5rem;
+}
+
+/*Formulario Contacto*/
+.formulario-contacto{
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.formulario-contacto fieldset{
+    border: 1px solid black;
+    margin-bottom: 2rem;
+}
+
+.formulario-contacto legend{
+    background-color: #005485;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 4rem;
+}
+
+.campo{
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.campo label{
+    flex-basis: 10rem; /*Le da una base a todos los labels de 10 rem en width*/
+}
+
+.campo input:not([type="radio"], [type="submit"]),
+.campo textarea, 
+.campo select {
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+}
+
+.campo input[type="submit"]{
+    margin: 0 auto;
+}
